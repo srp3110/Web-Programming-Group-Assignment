@@ -16,8 +16,9 @@ session_start();
 
             mysqli_query($con, $query);
             header("Location: login.php");
+            die;
         }else{
-            echo "Please enter some valid information!";
+            echo "Please enter some valid information!"; //put js alert box
         }
     }
 ?>
@@ -26,20 +27,20 @@ session_start();
 <html lang="en">
 <head>
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/login_signup_new.css">
+    <link rel="stylesheet" href="css/login_signup.css">
 </head>
 <body>
     <section>
          <div class="container">
             <div class="user siginpBx">
-                <div class="imgBx"><img src="images/signup.jpg" alt="donut boi2"></div>
+                <div class="imgBx"><img src="images/signup.jpg" alt="library nap"></div>
                 <div class="formBx">
                     <form method="post">
                         <h2>Sign Up</h2>
-                        <input id="text" type="text" placeholder="Username" name="user_name">
-                        <input id="text" type="password" placeholder="Create Password" name="password">
-                        <input id="button" type="submit" value="Sign Up">
-                        <p class="signup">Already have an account? <a href="login.php" onclick="toggleForm();">Sign In.</a>
+                        <input type="text" placeholder="Username" name="user_name">
+                        <input type="password" placeholder="Create Password" name="password">
+                        <input id="redbutton" type="submit" value="Sign Up">
+                        <p class="signup">Already have an account? <a href="login.php">Sign In.</a>
                         <br><a href="Intro page.html">Return to home page</a></p>
                     </form>
                 </div>

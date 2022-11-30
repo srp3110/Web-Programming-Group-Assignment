@@ -1,8 +1,8 @@
 <?php
 
 function check_login($con){
-    if(isset($_SESSION["user_id"])){
-        $id = $_SESSION["user_id"];
+    if(isset($_SESSION['user_id'])){
+        $id = $_SESSION['user_id'];
         $query = "Select * from users wher user_id = '$id' limit 1";
         
         $result = mysqli_query($con, $query);
@@ -12,8 +12,8 @@ function check_login($con){
         }
     }
 
-    //redirect to login
-    // header("Location: login.php");
+    // redirect to login
+    // header('Location: login.php');
     // die;
 }
 

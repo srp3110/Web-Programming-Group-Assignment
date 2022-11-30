@@ -16,6 +16,5 @@ session_start();
     <a href="logout.php">Logout</a>
     <h1>This is HOME</h1>
     <br>
-    Hello user
 </body>
 </html>
