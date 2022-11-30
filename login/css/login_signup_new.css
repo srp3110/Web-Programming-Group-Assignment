@@ -104,52 +104,6 @@ section .container .user .formBx input[type="submit"]{
     transition: 0.5s;
 }
 
-section .container .user.signupBx .formBx input[type="submit"]{
-    background: #e73e49;
-}
-
-section .container .user .formBx .signup{
-    position: relative;
-    margin-top: 20px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #555;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-section .container .user .formBx .signup a{
-    font-weight: 600;
-    text-decoration: none;
-    color: #577eff;
-}
-
-section .container .signupBx{
-    pointer-events: none;
-}
-
-section .container.active .signupBx{
-    pointer-events: initial;
-}
-
-section .container .signupBx .formBx{
-    top: 100%;
-}
-
-section .container.active .signupBx .formBx{
-    top: 0;
-}
-
-section .container .signupBx .imgBx{
-    top: -100%;
-    transition: 0.5s;
-}
-
-section .container.active .signupBx .imgBx{
-    top: 0;
-}
-
-
 section .container .signinBx .formBx{
     top: 0;
 }
@@ -167,7 +121,7 @@ section .container.active .signinBx .imgBx{
     top: -100%;
 }
 
-@media (max-width: 991px){
+/* @media (max-width: 991px){
     section .container{
         max-width: 400px;
     }
@@ -180,4 +134,4 @@ section .container.active .signinBx .imgBx{
     section .container.active .signinBx .formBx{
         top: -100%;
     }
-}
+} */
