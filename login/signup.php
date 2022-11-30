@@ -14,8 +14,8 @@ session_start();
             $user_id = random_num(20);
             $query = "insert into users (user_id, user_name, password) values ('$user_id', '$user_name', '$password')";
 
-            // mysqli_query($con, $query);
-            // header("Location: login.php");
+            mysqli_query($con, $query);
+            header("Location: login.php");
         }else{
             echo "Please enter some valid information!";
         }
@@ -26,17 +26,25 @@ session_start();
 <html lang="en">
 <head>
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/login_signup.css">
+    <link rel="stylesheet" href="css/login_signup_new.css">
 </head>
 <body>
-    <div id="box">
-        <div class="hText">Sign Up</div>
-        <form method="post">
-            <input id="text" type="text" name="user_name"><br><br>
-            <input id="text" type="password" name="password"><br><br>
-            <input id="button" type="submit" value="signup"><br><br>
-            <a id="no_u" href="login.php">Click Here to Login</a>
-        </form>
-    </div>
+    <section>
+         <div class="container">
+            <div class="user siginpBx">
+                <div class="imgBx"><img src="images/signup.jpg" alt="donut boi2"></div>
+                <div class="formBx">
+                    <form method="post">
+                        <h2>Sign Up</h2>
+                        <input id="text" type="text" placeholder="Username" name="user_name">
+                        <input id="text" type="password" placeholder="Create Password" name="password">
+                        <input id="button" type="submit" value="Sign Up">
+                        <p class="signup">Already have an account? <a href="login.php" onclick="toggleForm();">Sign In.</a>
+                        <br><a href="Intro page.html">Return to home page</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
