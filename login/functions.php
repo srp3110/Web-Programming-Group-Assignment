@@ -13,8 +13,8 @@ function check_login($con){
     }
 
     //redirect to login
-    header("Location: login.php");
-    die;
+    // header("Location: login.php");
+    // die;
 }
 
 function random_num($length){
